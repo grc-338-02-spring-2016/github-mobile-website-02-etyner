@@ -1,0 +1,194 @@
+ 
+
+/* The container sets the width as a percentage of the browser window and margin 0 auto centers the page
+ Note that all measurements are in relative units*/
+	
+.container {
+    height: auto;
+    margin: .5em;
+}
+
+h1 {
+    font-family: 'Phosphate-Solid', sans-serif;
+    color: #eec0ed;
+    letter-spacing: 1.5em;
+    line-height: 120%;
+    text-align: center;
+    background-color: white;
+    font-size: 1.8em;
+    padding: .8em 0 .8em 10%;
+}
+
+h3 {
+    font-family: 'Phosphate-Solid', sans-serif;
+    font-size: 0.6em;
+    font-weight: 30;
+    color: #260226;
+    background-color: white;
+    padding: 5% 0 3% 0;
+}
+
+p {
+    font-family: 'Futura-Medium', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+blockquote{
+    background-color: white;
+    padding: .5em;
+    border-radius: 8px;
+    font-family: 'Futura-Medium', sans-serif;
+    line-height: 1.5em;
+    color:#eaeced;
+    text-indent: 1.5em;
+    quotes:"\201C" "\201D";  
+}
+
+/*Here are two pseudo class selectors to apply tp blockquote*/
+
+blockquote:before {
+    content: open-quote;
+    font-family: 'Futura-Medium', sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-family: 'Futura-Medium', sans-serif;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+section {
+    padding: 0% 0% 0% 0%;
+    text-align: left;
+    background-color: white;
+    overflow: hidden;
+}
+
+section h3 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0% 0 0 0;
+    line-height: 120%
+}
+
+section p {
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+/*This sets the maximum width of the image to no more than the containing element*/
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+   
+    text-align: justify;
+    background-color: white;
+    padding: 0 2% 4% 2%;
+    overflow: hidden;
+}
+
+em {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #706f7e;
+    display: block;
+    padding: 0 0 1% 0;
+}
+
+.professional {
+    margin: 3% 0 0 0;
+}
+
+.professional p{
+    margin: 0 0 1% 0;
+}
+
+/*Start of Nav menu*/
+
+ /*This sets the font size and removes the default bullets from the ul list. Also sets the overall with of the ul as a percentage of the containing element*/
+nav ul {
+    margin:0;
+    padding: 1em 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    background-color:white;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+/*This sets the list items to display as blocks, with links within each list item floating next to each other within each block with a right margin to seperate each block*/
+nav ul li {
+    display: block;
+    padding: 1% 1% 1% 1%;
+    margin: 0 0 0 0%;
+}
+
+/*Sets each a link to display as block. Sets the color of the background of blocks and text and centers text in box*/
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 180%;
+    background: white;
+    font-family: 'Futura-Medium', sans-serif;
+    color: #f4f4f4;
+    font-weight: 400;
+}
+
+a:link {
+    color: #bacae2;
+}
+
+a:hover { 
+    color: #eaeced; 
+}
+
+nav ul li a:visited { 
+    color: #bacae2; 
+}
+
+/* END nav MENU */
+
+/*List of office hours*/
+ul li {
+    font-family: 'Futura-Medium';
+    line-height: 1.4em;
+    color: #000000;
+    margin-left: 3em;
+    padding-right: 10%;
+}
+
+footer {
+    height: auto;
+    color: #eaeced;
+    text-decoration: none;
+    font-family: 'Futura-Medium', sans-serif;
+    text-align: center;
+    padding: 3% 0 3% 0;
+    overflow: hidden;
+    background-color:white;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+footer:visited { 
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.footertext {
+    display: block;
+    font-size: 1.2em;
+}
