@@ -1,57 +1,113 @@
-
-
 <!DOCTYPE html>
-    
 <html>
-
 <head>
-    
-    <meta charset="utf-8">
-    <title>about me</title>
-     
-    <!--Detects device width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--Reset stylesheet removes browser stylesheet default settings-->
-    <link href="styles/reset.css" type="text/css" rel="stylesheet">   
-    <link href="styles/style-3.css" type="text/css" rel="stylesheet">
-    
-</head> 
-    
+<meta charset="UTF-8" />
+
+
+<title>portfolio</title>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:900' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="styles/style-3.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="prettyphoto/prettyPhoto.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo/nivo-slider.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="nivo/jquery-1.6.1.min.js"></script>
+<script src="prettyphoto/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+   <script type="text/javascript">
+		$(document).ready(function(){
+		//Set opacity on each span to 0%
+		$(".rollover").css({'opacity':'0'});
+		 
+		$('#gallery a.item').hover(
+			function() {
+				$(this).find('.rollover').stop().fadeTo(500, 1);
+			},
+			function() {
+				$(this).find('.rollover').stop().fadeTo(500, 0);
+			}
+		)
+		});
+	</script>
+</head>
+
 <body>
-   
-    <!--Sometimes called Wrapper, everything is inside this container-->
-    <div class="container">
-
-            <h1>ELLIE  TYNER</h1>
-
-        <section>
-            
-            <h3>pc4pc?? </h3>
-            
-            <p></p> 
-            
-        </section>
+<div id="container">
+	<!---BEGIN Header--->
+ <h1>ELLIE  TYNER</h1>
+    
+    <!---BEGIN Slider--->
+    <div class="slider-wrapper theme-default">
+            <span id="slider-shadow"></span>
+            <div id="slider" class="nivoSlider">
+                <a href="#"><img src="images/slider/slider-img-1.jpg" alt="" title="#htmlcaption1" /></a>
+                <a href="#"><img src="images/slider/slider-img-2.jpg" alt="" title="#htmlcaption2" /></a>
+                <a href="#"><img src="images/slider/slider-img-3.jpg" alt="" title="#htmlcaption3" /></a>
+                <a href="#"><img src="images/slider/slider-img-4.jpg" alt="" title="#htmlcaption4" /></a>
+                <a href="#"><img src="images/slider/slider-img-5.jpg" alt="" title="#htmlcaption5" /></a>
+            </div>
+        </div>
         
-        <main>
-        <img src="images/ellie.jpg" alt="ocean" />
-
-        </main>
-
-        <footer>
+     
+        <div id="gallery">
+            <div id="title-divider"><h3></h3></div>
+            <a href="images/gallery/gallery-full1.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb1.jpg"/></a>
+            <a href="images/gallery/gallery-full2.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb2.jpg"/></a>
+            <a href="images/gallery/gallery-full3.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb3.jpg"/></a>
+            <a href="images/gallery/gallery-full4.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb4.jpg"/></a>
+            <a href="images/gallery/gallery-full5.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb5.jpg"/></a>
+            <a href="images/gallery/gallery-full6.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb6.jpg"/></a>
+            <a href="images/gallery/gallery-full7.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb7.jpg"/></a>
+            <a href="images/gallery/gallery-full8.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb8.jpg"/></a>
+            <a href="images/gallery/gallery-full9.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb9.jpg"/></a>
+            <a href="images/gallery/gallery-full10.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover">
+</span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb10.jpg"/></a>
+           <a href="images/gallery/gallery-full11.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb11.jpg"/></a>
+            <a href="images/gallery/gallery-full12.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb12.jpg"/></a>
+            <a href="images/gallery/gallery-full13.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb13.jpg"/></a>
+            <a href="images/gallery/gallery-full14.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb14.jpg"/></a>
+            <a href="images/gallery/gallery-full15.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb15.jpg"/></a>
+            <a href="images/gallery/gallery-full16.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb16.jpg"/></a>
+            <a href="images/gallery/gallery-full17.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb17.jpg"/></a>
+            <a href="images/gallery/gallery-full18.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb18.jpg"/></a>
+            <a href="images/gallery/gallery-full19.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb19.jpg"/></a>
+            <a href="images/gallery/gallery-full20.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb20.jpg"/></a>
+            <a href="images/gallery/gallery-full21.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb21.jpg"/></a>
+            <a href="images/gallery/gallery-full22.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb22.jpg"/></a>
+            <a href="images/gallery/gallery-full23.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb23.jpg"/></a>
+            <a href="images/gallery/gallery-full24.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb24.jpg"/></a>
+            <a href="images/gallery/gallery-full25.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb25.jpg"/></a>
+        </div>
+    
+     <footer>
             <nav>
             <ul>
                 <li><a href="index.html">BACK TO HOME PAGE</a></li>
-                <li><a href="contact.html">SAY HELLO</a></p></li>
             </ul>
         </nav>
             
         </footer>
+        
+        
 
-
-    </div>
-    <!--end of container div-->
-
-</body>
+    <script type="text/javascript" src="nivo/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+			effect:'random', 
+            slices:15,  
+            animSpeed:500, 
+            pauseTime:5000
+			});
+    });
+    </script>
     
+    <script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal', theme:'dark_rounded', social_tools:false, slideshow:false, autoplay_slideshow: false});
+		$(".image a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal', theme:'dark_rounded', social_tools:false, slideshow:false, autoplay_slideshow: false});
+	});
+	</script>
+</body>
 </html>

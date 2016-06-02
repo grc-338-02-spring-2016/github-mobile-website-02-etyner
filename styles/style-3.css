@@ -1,7 +1,3 @@
- 
-
-/* The container sets the width as a percentage of the browser window and margin 0 auto centers the page
- Note that all measurements are in relative units*/
 	
 .container {
     height: auto;
@@ -9,7 +5,8 @@
 }
 
 h1 {
-    font-family: 'Phosphate-Solid', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
     color: #eec0ed;
     letter-spacing: 1.5em;
     line-height: 120%;
@@ -20,10 +17,10 @@ h1 {
 }
 
 h3 {
-    font-family: 'Phosphate-Solid', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
     font-size: 0.6em;
-    font-weight: 30;
-    color: #260226;
+    color: #535353;
     background-color: white;
     padding: 5% 0 3% 0;
 }
@@ -47,22 +44,6 @@ blockquote{
     quotes:"\201C" "\201D";  
 }
 
-/*Here are two pseudo class selectors to apply tp blockquote*/
-
-blockquote:before {
-    content: open-quote;
-    font-family: 'Futura-Medium', sans-serif;
-    font-size: 1.7em;
-    font-weight: 700;
-}
-
-blockquote:after {
-    content: close-quote;
-    font-family: 'Futura-Medium', sans-serif;
-    font-size: 1.7em;
-    font-weight: 700;
-}
-
 section {
     padding: 0% 0% 0% 0%;
     text-align: left;
@@ -83,12 +64,13 @@ section p {
     line-height: 1.6;
 }
 
-/*This sets the maximum width of the image to no more than the containing element*/
 img {
     max-width: 100%;
-    display: block;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
+    float:inherit;
 }
 
 main {
@@ -114,10 +96,6 @@ em {
 .professional p{
     margin: 0 0 1% 0;
 }
-
-/*Start of Nav menu*/
-
- /*This sets the font size and removes the default bullets from the ul list. Also sets the overall with of the ul as a percentage of the containing element*/
 nav ul {
     margin:0;
     padding: 1em 0 0 0;
@@ -127,15 +105,12 @@ nav ul {
     width: 100%;
     font-size: 1.1em;
 }
-
-/*This sets the list items to display as blocks, with links within each list item floating next to each other within each block with a right margin to seperate each block*/
 nav ul li {
     display: block;
     padding: 1% 1% 1% 1%;
     margin: 0 0 0 0%;
 }
 
-/*Sets each a link to display as block. Sets the color of the background of blocks and text and centers text in box*/
 nav ul li a {
     display: block;
     text-decoration: none;
@@ -144,6 +119,10 @@ nav ul li a {
     font-family: 'Futura-Medium', sans-serif;
     color: #f4f4f4;
     font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #eaeced;
 }
 
 a:link {
@@ -158,9 +137,6 @@ nav ul li a:visited {
     color: #bacae2; 
 }
 
-/* END nav MENU */
-
-/*List of office hours*/
 ul li {
     font-family: 'Futura-Medium';
     line-height: 1.4em;
